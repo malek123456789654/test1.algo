@@ -1,0 +1,22 @@
+ALGORITHM checkpiont
+VAR
+    ch:STRING;
+   s,k, i:INTEGER;
+
+BEGIN
+s:=0;
+k:=0;
+ REPEAT
+     FOR i FROM 1 TO length.ch STEP step  DO
+         if ch[i]in ('o','i','y','e','a','u')
+         then
+         s:=s+1;
+         if ch[i]=' '
+             then 
+             k:=k+1;
+
+     END_FOR
+ UNTIL (ch[i]<>'i')
+ write (s);
+ write(k+1);
+END
